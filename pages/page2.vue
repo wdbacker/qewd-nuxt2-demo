@@ -31,7 +31,7 @@
 export default {
   data () {
     return {
-      response: 'No response yet!'
+      response: 'Nothing sent yet!'
     }
   },
   methods: {
@@ -41,7 +41,7 @@ export default {
       this.$qewd.reply({
         type: 'test',
         params: {
-          text: 'a Vue.js test message'
+          text: 'a NuxtJS WebSockets test message from page 2'
         }
       }).then(response => {
         self.response = response.message.text
