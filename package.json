@@ -9,9 +9,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxt/http": "^0.6.4",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
-    "qewd-client": "^2.0.0"
+    "qewd-client": "wdbacker/qewd-client"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.0",

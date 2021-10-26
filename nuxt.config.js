@@ -1,4 +1,7 @@
 export default {
+  server: {
+    host: '0.0.0.0'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'qewd-nuxt2-demo',
@@ -22,8 +25,12 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugins/qewd-plugin.js', mode: 'client' }
+    '~/plugins/qewd-nuxt2-plugin.client.js'
   ],
+
+  publicRuntimeConfig: {
+    qewdUrl: process.env.QEWD_URL || 'http://qewd-dev.local:8080'
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -36,6 +43,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/http'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

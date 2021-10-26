@@ -9,10 +9,7 @@
       "request": "launch",
       "name": "Chrome client",
       "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}",
-      "sourceMaps": true,
-      "cleanUp": "onlyTab",
-      "browserLaunchLocation": "workspace"
+      "webRoot": "${workspaceFolder}"
     },
     {
       "type": "pwa-node",
