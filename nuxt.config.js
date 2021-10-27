@@ -29,7 +29,7 @@ export default {
   ],
 
   publicRuntimeConfig: {
-    qewdUrl: process.env.QEWD_URL || 'http://qewd-dev.local:8080'
+    qewdUrl: process.env.QEWD_URL || 'http://localhost:8080'
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
